@@ -4,7 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { styled } from 'linaria/react';
 // import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-const Header = ({ siteTitle }) => {
+const toggleMenu = (menuOpen, setMenuState, setBodyBlurState) => {
+  if (menuOpen) {
+    setMenuState(false);
+    setBodyBlurState();
+  } else {
+    setMenuState(true);
+    setBodyBlurState();
+  }
+};
+
+const Header = ({ className, siteTitle, setBodyBlurState }) => {
   const [menuOpen, setMenuState] = useState(false);
 
   useEffect(() => {
@@ -12,9 +22,7 @@ const Header = ({ siteTitle }) => {
     //   setMenuState(false);
     //   // clearAllBodyScrollLocks();
     // });
-
     // const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
-
     // mobileMenuItems.forEach((item) => {
     //   item.addEventListener('click', () => {
     //     setMenuState(false);
@@ -23,32 +31,31 @@ const Header = ({ siteTitle }) => {
     // });
   });
 
-  const toggleMenu = () => {
-    if (menuOpen) {
-      setMenuState(false);
-    } else {
-      setMenuState(true);
-    }
-  };
-
   return (
     <header id="navbar">
       <Container className="container full-height">
         <div className="navbar-content full-height">
           <div className="navbar-left">
-            <h2 className="navbar-title">
-              <a href="/">{siteTitle}</a>
-            </h2>
+            <div className={className}>
+              <h2 className="navbar-title">
+                <a href="/">{siteTitle}</a>
+              </h2>
+            </div>
           </div>
           <div className="navbar-right full-height">
-            <MobileMenuIcon className="full-height" onMouseOver={toggleMenu()}>
-              Meny
-            </MobileMenuIcon>
             <div
               id="mobile-menu"
               className={menuOpen ? 'mobile-menu open' : 'mobile-menu'}
             >
-              <div id="mobile-menu-items" className="mobile-menu-items">
+              <div
+                className="mobile-menu-items"
+                onMouseLeave={toggleMenu.bind(
+                  null,
+                  menuOpen,
+                  setMenuState,
+                  setBodyBlurState,
+                )}
+              >
                 <a className="mobile-menu-item" href="#home">
                   Home
                 </a>
@@ -61,28 +68,21 @@ const Header = ({ siteTitle }) => {
                 <a className="mobile-menu-item" href="#portfolio">
                   Portfolio
                 </a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://github.com/jarodpeachey"
-                  className="mobile-menu-item"
-                >
-                  <FontAwesomeIcon icon={['fab', 'github']} id="menu-toggle" />
-                </a>
-                <a
-                  href="https://linkeding.com/in/jarod-peachey"
-                  className="mobile-menu-item"
-                >
-                  <FontAwesomeIcon
-                    icon={['fab', 'linkedin']}
-                    id="menu-toggle"
-                  />
-                </a>
               </div>
             </div>
           </div>
         </div>
+        <MobileMenuIcon
+          className="full-height"
+          onMouseOver={toggleMenu.bind(
+            null,
+            menuOpen,
+            setMenuState,
+            setBodyBlurState,
+          )}
+        >
+          Meny
+        </MobileMenuIcon>
       </Container>
     </header>
   );
@@ -99,18 +99,19 @@ Header.defaultProps = {
 const Container = styled.div``;
 
 const MobileMenuIcon = styled.div`
+  position: absolute;
+  top: 0;
+  right: 60px;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 14px;
   text-decoration: underline;
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
-    transition-duration: .5s;
+    transition-duration: 0.5s;
   }
-  & > * {
-    z-index: 999;
-  }
+  z-index: 999;
 `;
 
 export default Header;
