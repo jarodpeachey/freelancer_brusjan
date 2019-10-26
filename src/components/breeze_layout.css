@@ -15,7 +15,7 @@
   visibility: hidden;
   height: 100vh;
   transform-origin: 0 0;
-  transform: translateX(-120%);
+  transform: translateX(120%);
   width: 100%;
   transition: all 0.275s 0.1s;
 }
@@ -260,7 +260,7 @@ body {
   overflow-x: auto;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
   font-family: Raleway !important;
 }
 

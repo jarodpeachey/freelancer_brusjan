@@ -56,17 +56,17 @@ const Header = ({ className, siteTitle, setBodyBlurState }) => {
                   setBodyBlurState,
                 )}
               >
-                <a className="mobile-menu-item" href="#home">
+                <a className="mobile-menu-item" href="/">
                   Home
                 </a>
-                <a className="mobile-menu-item" href="#about">
-                  About
+                <a className="mobile-menu-item" href="/arbeid">
+                  Arbeid
                 </a>
                 <a className="mobile-menu-item" href="#skills">
-                  Skills
+                  Partnere
                 </a>
                 <a className="mobile-menu-item" href="#portfolio">
-                  Portfolio
+                  Kontakt
                 </a>
               </div>
             </div>
