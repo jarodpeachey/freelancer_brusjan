@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   width: 100%;
   text-align: center;
   font-weight: ${props => (props.hover ? 800 : 500)};
-  cursor: ${props => (props.hover ? 'pointer' : null)};
+  cursor: ${props => (props.hover ? 'pointer' : 'normal')};
   & a {
     color: black !important;
     text-decoration: none !important;

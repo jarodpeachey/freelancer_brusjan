@@ -257,7 +257,7 @@ a.button.secondary.transparent::before {
 body {
   width: 100%;
   height: 100%;
-  overflow-x: auto;
+  overflow-x: initial;;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
@@ -1726,12 +1726,17 @@ p {
 #navbar {
   width: 100% !important;
   z-index: 999 !important;
-  margin-top: 16px;
+  /* padding-top: 16px; */
   height: 60px;
   position: fixed;
-  top: 0;
-  color: black !important;
+  /* top: -16px; */
+  color: black;
+  background: white;
   text-decoration: none;
+}
+
+#navbar.scrolled {
+  box-shadow: 0 40px 40px -22px rgb(231, 231, 231) !important;
 }
 
 #navbar a {

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { styled } from 'linaria/react';
 // import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
@@ -14,25 +13,36 @@ const toggleMenu = (menuOpen, setMenuState, setBodyBlurState) => {
   }
 };
 
+// const toggleScroll = (pageScroll, setPageScroll, setBodyBlurState) => {
+//   if (pageScroll) {
+//     setPageScroll(true);
+//     setBodyBlurState();
+//   } else {
+//     setPageScroll(true);
+//     setBodyBlurState();
+//   }
+// };
+
 const Header = ({ className, siteTitle, setBodyBlurState }) => {
+  const useForceUpdate = () => useState([1]);
+  const forceUpdate = useForceUpdate();
+
   const [menuOpen, setMenuState] = useState(false);
+  const [pageScroll, setPageScroll] = useState(0);
 
   useEffect(() => {
-    // document.getElementById('mobile-menu').addEventListener('click', () => {
-    //   setMenuState(false);
-    //   // clearAllBodyScrollLocks();
-    // });
-    // const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
-    // mobileMenuItems.forEach((item) => {
-    //   item.addEventListener('click', () => {
-    //     setMenuState(false);
-    //     // clearAllBodyScrollLocks();
-    //   });
-    // });
+    window.onScroll = () => {
+      setPageScroll(window.scrollY);
+      forceUpdate;
+
+      console.log(window.scrollY);
+    };
+
+    forceUpdate;
   });
 
   return (
-    <header id="navbar">
+    <header id="navbar" className={pageScroll > 0 ? 'scrolled' : ''}>
       <Container className="container full-height">
         <div className="navbar-content full-height">
           <div className="navbar-left">

@@ -61,15 +61,23 @@ const ArbeidPage = ({ data }) => {
       HELLO THERE
     </Background> */}
       <Wrapper className={blurState ? 'wrapper-blur' : ''}>
-        <div className="container">
+        <Container className="container">
           {listItems.map(item => (
-            <ListItem title={item.title} subtitle={item.subtitle} link={item.link} />
+            <ListItem
+              title={item.title}
+              subtitle={item.subtitle}
+              link={item.link}
+            />
           ))}
-        </div>
+        </Container>
       </Wrapper>
     </Layout>
   );
 };
+
+const Container = styled.div`
+  max-width: 569px !important;
+`;
 
 const Wrapper = styled.div`
   height: 100vh !important;
@@ -77,8 +85,16 @@ const Wrapper = styled.div`
   background: white;
   padding: 120px 0;
   overflow-y: scroll;
-  & --webkit-scrollbar {
-    visibility: hidden;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  &::-webkit-scrollbar-track {
+    background: white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: black;
+    z-index: 9999;
+    border-radius: 50px;
   }
 `;
 
