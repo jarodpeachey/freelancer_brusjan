@@ -9,40 +9,53 @@ const toggleHoverState = (hoverState, setHoverState) => {
   }
 };
 
-const ListItem = ({ title, subtitle, link }) => {
+const ListItem = ({ title, subtitle, link, listStyle, activeItem}) => {
   const [hoverState, setHoverState] = useState(false);
   return (
     <Wrapper
+      activeItem={activeItem}
       hover={hoverState}
       onMouseEnter={toggleHoverState.bind(null, hoverState, setHoverState)}
       onMouseLeave={toggleHoverState.bind(null, hoverState, setHoverState)}
+      centered={listStyle === 'center'}
     >
       <a href={link}>
-        <ListItemTitle>{title}</ListItemTitle>
-        <ListItemSubtitle>{subtitle}</ListItemSubtitle>
+        <ListItemTitle
+          activeItem={activeItem}
+          centered={listStyle === 'center'}
+        >
+          {title}
+        </ListItemTitle>
+        <ListItemSubtitle
+          activeItem={activeItem}
+          centered={listStyle === 'center'}
+        >
+          {subtitle}
+        </ListItemSubtitle>
       </a>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  margin: 36px auto;
+  margin: 0 auto 36px auto;
   width: 100%;
-  text-align: center;
-  font-weight: ${props => (props.hover ? 800 : 500)};
+  text-align: ${props => (props.centered ? 'center' : 'right')};
+  font-weight: ${props => (props.hover || props.activeItem ? 800 : 500)};
   cursor: ${props => (props.hover ? 'pointer' : 'normal')};
   & a {
     color: black !important;
     text-decoration: none !important;
   }
+  text-decoration: ${props => (props.activeItem ? 'line-through' : 'none')};
 `;
 
 const ListItemTitle = styled.div`
-  font-size: 40px;
+  font-size: ${props => (props.centered ? '40px' : '20px')};
 `;
 
 const ListItemSubtitle = styled.div`
-  font-size: 16px;
+  font-size: ${props => (props.centered ? '16px' : '16px')};
 `;
 
 export default ListItem;

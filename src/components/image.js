@@ -14,6 +14,13 @@ function withImageData (WrappedComponent) {
               }
             }
           }
+          stock_image: file(relativePath: { eq: "stock_image.jpeg" }) {
+            childImageSharp {
+              fluid(maxWidth: 1400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       `}
       render={data => <WrappedComponent {...props} imageData={data} />}
@@ -24,5 +31,8 @@ function withImageData (WrappedComponent) {
 const MainLogo = withImageData(props => (
   <Img fluid={props.imageData.main_logo.childImageSharp.fluid} />
 ));
+const StockImage = withImageData(props => (
+  <Img fluid={props.imageData.stock_image.childImageSharp.fluid} />
+));
 
-export { MainLogo };
+export { MainLogo, StockImage };

@@ -55,12 +55,12 @@ const Wrapper = styled.div`
   background: white;
   display: flex;
   align-items: center;
-  padding: 120px 0;
+  padding: 60px 0 0;
   & .gatsby-image-wrapper {
     width: 70% !important;
-    height: auto !important;
+    // height: auto !important;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 460px;
   }
 `;
 

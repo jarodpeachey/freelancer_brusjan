@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { styled } from 'linaria/react';
+// import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/header';
-import ListItem from '../components/list-item';
+// import ListItem from '../components/list-item';
+import ArbeidList from '../components/arbeid-list';
 
 const setBodyBlurState = (setBlurState, blurState) => {
   if (blurState) {
@@ -16,59 +18,18 @@ const setBodyBlurState = (setBlurState, blurState) => {
 const ArbeidPage = ({ data }) => {
   const [blurState, setBlurState] = useState(false);
 
-  const listItems = [
-    {
-      title: 'Snow Boyz',
-      subtitle: 'Musikkvideo - "Grov Shit"',
-      link: 'https://google.com',
-    },
-    {
-      title: '"Wanted" Diplom - Is',
-      subtitle: 'for We Are Live',
-      link: 'https://google.com',
-    },
-    {
-      title: 'Kjartan Lauritzen',
-      subtitle: 'Musikkvideo - "Pappa"',
-      link: 'https://google.com',
-    },
-    {
-      title: 'Vin & Rap',
-      subtitle: 'Ymse episodar',
-      link: 'https://google.com',
-    },
-    {
-      title: '"Ramm & Tornquist redder Norge"',
-      subtitle: 'TV2 innslag',
-      link: 'https://google.com',
-    },
-    {
-      title: 'Fanny Andersen',
-      subtitle: '*placeholder text*',
-      link: 'https://google.com',
-    },
-  ];
-
   return (
     <Layout>
       <Header
         className={blurState ? 'blur' : ''}
         siteTitle="Brusjan"
         setBodyBlurState={setBodyBlurState.bind(null, setBlurState, blurState)}
+        activePage="Arbeid"
       />
       <SEO title="Arbeid" />
-      {/* <Background>
-      HELLO THERE
-    </Background> */}
       <Wrapper className={blurState ? 'wrapper-blur' : ''}>
         <Container className="container">
-          {listItems.map(item => (
-            <ListItem
-              title={item.title}
-              subtitle={item.subtitle}
-              link={item.link}
-            />
-          ))}
+          <ArbeidList listStyle="center" />
         </Container>
       </Wrapper>
     </Layout>
@@ -84,18 +45,6 @@ const Wrapper = styled.div`
   width: 100% !important;
   background: white;
   padding: 120px 0;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    width: 0.5em;
-  }
-  &::-webkit-scrollbar-track {
-    background: white;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: black;
-    z-index: 9999;
-    border-radius: 50px;
-  }
 `;
 
 export default ArbeidPage;

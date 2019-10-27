@@ -23,22 +23,17 @@ const toggleMenu = (menuOpen, setMenuState, setBodyBlurState) => {
 //   }
 // };
 
-const Header = ({ className, siteTitle, setBodyBlurState }) => {
-  const useForceUpdate = () => useState([1]);
-  const forceUpdate = useForceUpdate();
+const Header = ({ className, siteTitle, setBodyBlurState, activePage }) => {
 
   const [menuOpen, setMenuState] = useState(false);
   const [pageScroll, setPageScroll] = useState(0);
 
   useEffect(() => {
-    window.onScroll = () => {
+    window.addEventListener('scroll', () => {
       setPageScroll(window.scrollY);
-      forceUpdate;
 
-      console.log(window.scrollY);
-    };
-
-    forceUpdate;
+      console.log(document.body.scrollY);
+    });
   });
 
   return (
@@ -93,6 +88,7 @@ const Header = ({ className, siteTitle, setBodyBlurState }) => {
         >
           Meny
         </MobileMenuIcon>
+        <ActivePageIndicator className="full-height">{activePage}</ActivePageIndicator>
       </Container>
     </header>
   );
@@ -122,6 +118,17 @@ const MobileMenuIcon = styled.div`
     transition-duration: 0.5s;
   }
   z-index: 999;
+`;
+
+const ActivePageIndicator = styled.div`
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  top: 36px;
+  font-weight: 800;
 `;
 
 export default Header;
