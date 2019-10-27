@@ -15,7 +15,7 @@ const setBodyBlurState = (setBlur, blurState) => {
   }
 };
 
-const Layout = ({ children, title = 'Home' }) => {
+const Layout = ({ children, title = 'Home', dark = false }) => {
   const [blurState, setBlur] = useState(false);
   const titleData = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,8 +27,9 @@ const Layout = ({ children, title = 'Home' }) => {
     }
   `);
   return (
-    <>
+    <div className={dark ? 'dark' : ''}>
       <Header
+        dark={dark}
         activePage={title}
         className={blurState ? 'blur' : ''}
         siteTitle={titleData.site.siteMetadata.title}
@@ -36,7 +37,7 @@ const Layout = ({ children, title = 'Home' }) => {
       />
       <SEO title={title} />
       <div className={blurState ? 'blur' : ''}>{children}</div>
-    </>
+    </div>
   );
 };
 

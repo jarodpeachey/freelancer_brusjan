@@ -15,8 +15,6 @@ const IndexPage = ({ data }) => {
 
 const Wrapper = styled.div`
   height: 100vh !important;
-  width: 100% !important;
-  background: white;
   display: flex;
   align-items: center;
   padding: 60px 0 0;

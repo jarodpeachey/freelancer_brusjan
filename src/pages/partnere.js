@@ -6,8 +6,7 @@ import { LiveNationImage, SonyMusicImage, OYAImage } from '../components/image';
 
 const PartnerePage = ({ data }) => (
   <Layout title="Partnere">
-    <Wrapper>
-      <div className="container">
+    <Wrapper className="container">
         <Row className="row">
           <Column className="col col-6 tablet-col-4">
             <Image>
@@ -26,7 +25,6 @@ const PartnerePage = ({ data }) => (
           </Column>
           <div className="col col-6 tablet-col-4" />
         </Row>
-      </div>
     </Wrapper>
   </Layout>
 );
@@ -45,8 +43,6 @@ const Column = styled.div`
 
 const Wrapper = styled.div`
   height: 100vh !important;
-  width: 100% !important;
-  background: white;
   padding: 120px 0;
 `;
 

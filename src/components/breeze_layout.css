@@ -42,6 +42,7 @@
 .mobile-menu-items {
   width: fit-content;
   margin-left: auto;
+  background: transparent !important;
 }
 
 .mobile-menu-item {
@@ -52,6 +53,7 @@
   text-align: right;
   padding-right: 60px;
   padding-left: 120px;
+  background: transparent !important;
 }
 
 .mobile-menu-item:hover {
@@ -1751,7 +1753,7 @@ p {
   box-shadow: 0 40px 40px -22px rgb(231, 231, 231) !important;
 }
 
-#navbar a {
+.navbar-content a {
   color: black !important;
   text-decoration: none;
 }
@@ -2776,4 +2778,13 @@ small {
   .widescreen-align-text-right {
     text-align: right !important;
   }
+}
+
+.dark {
+  background: black !important;
+  color: white !important;;
+}
+
+.dark a {
+  color: white !important;;
 }

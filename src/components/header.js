@@ -23,7 +23,7 @@ const toggleMenu = (menuOpen, setMenuState, setBodyBlurState) => {
 //   }
 // };
 
-const Header = ({ className, siteTitle, setBodyBlurState, activePage }) => {
+const Header = ({ className, siteTitle, setBodyBlurState, activePage, dark }) => {
   const [menuOpen, setMenuState] = useState(false);
   const [pageScroll, setPageScroll] = useState(0);
 
@@ -36,7 +36,10 @@ const Header = ({ className, siteTitle, setBodyBlurState, activePage }) => {
   });
 
   return (
-    <header id="navbar" className={pageScroll > 0 ? 'scrolled' : ''}>
+    <header
+      className={dark ? pageScroll > 0 ? 'dark scrolled' : 'dark' : ''}
+      id="navbar"
+    >
       <Container className="container full-height">
         <div className="navbar-content full-height">
           <div className="navbar-left">
