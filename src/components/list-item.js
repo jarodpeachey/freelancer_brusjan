@@ -9,7 +9,7 @@ const toggleHoverState = (hoverState, setHoverState) => {
   }
 };
 
-const ListItem = ({ title, subtitle, link, listStyle, activeItem}) => {
+const ListItem = ({ title, name, link, listStyle, activeItem}) => {
   const [hoverState, setHoverState] = useState(false);
   return (
     <Wrapper
@@ -24,13 +24,13 @@ const ListItem = ({ title, subtitle, link, listStyle, activeItem}) => {
           activeItem={activeItem}
           centered={listStyle === 'center'}
         >
-          {title}
+          {name}
         </ListItemTitle>
         <ListItemSubtitle
           activeItem={activeItem}
           centered={listStyle === 'center'}
         >
-          {subtitle}
+          {title}
         </ListItemSubtitle>
       </a>
     </Wrapper>

@@ -1,32 +1,38 @@
 [
   {
     "name": "Snow Boyz",
-    "title": "Musikkvideo - \"Grov Shit\"",
+    "fullTitle": "Musikkvideo - \"Grov Shit\"",
+    "shortTitle": "\"Grov Shit\"",
     "slug": "snow-boyz"
   },
   {
     "name": "\"Wanted\" Diplom - Is",
-    "title": "for We Are Live",
+    "fullTitle": "for We Are Live",
+    "shortTitle": "",
     "slug": "wanted-diplom"
   },
   {
     "name": "Kjarten Lauritzen",
-    "title": "Musikkvideo - \"Pappa\"",
+    "fullTitle": "Musikkvideo - \"Pappa\"",
+    "shortTitle": "\"Pappa\"",
     "slug": "kjarten-lauritzen"
   },
   {
     "name": "Vin & Rap",
-    "title": "Ymse episodar",
+    "fullTitle": "Ymse episodar",
+    "shortTitle": "",
     "slug": "vin-rap"
   },
   {
     "name": "\"Ramm & Tornquist redder Norge\"",
-    "title": "TV2 innslag",
+    "fullTitle": "TV2 innslag",
+    "shortTitle": "",
     "slug": "ramm-tornquist"
   },
   {
     "name": "Fanny Andersen",
-    "title": "*placeholder text*",
+    "fullTitle": "*placeholder text*",
+    "shortTitle": "",
     "slug": "fanny-andersen"
   }
 ]

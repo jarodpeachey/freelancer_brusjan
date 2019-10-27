@@ -20,7 +20,7 @@
   left: 0;
   bottom: 0;
   text-align: center;
-  background: rgba(255, 255, 255, 0.658);
+  background: rgba(255, 255, 255, 0.418);
   opacity: 0;
   z-index: -1;
   visibility: hidden;
@@ -57,16 +57,17 @@
 .mobile-menu-item:hover {
   font-weight: bold;
   transition-duration: 0.25s;
+  font-size: 60px;
 }
 
 .blur {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(5px) !important;
+  -webkit-filter: blur(5px) !important;
 }
 
 .wrapper-blur {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  filter: blur(10px) !important;
+  -webkit-filter: blur(10px) !important;
 }
 
 @font-face {

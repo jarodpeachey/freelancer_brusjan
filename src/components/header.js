@@ -24,7 +24,6 @@ const toggleMenu = (menuOpen, setMenuState, setBodyBlurState) => {
 // };
 
 const Header = ({ className, siteTitle, setBodyBlurState, activePage }) => {
-
   const [menuOpen, setMenuState] = useState(false);
   const [pageScroll, setPageScroll] = useState(0);
 
@@ -67,10 +66,10 @@ const Header = ({ className, siteTitle, setBodyBlurState, activePage }) => {
                 <a className="mobile-menu-item" href="/arbeid">
                   Arbeid
                 </a>
-                <a className="mobile-menu-item" href="#skills">
+                <a className="mobile-menu-item" href="/partnere">
                   Partnere
                 </a>
-                <a className="mobile-menu-item" href="#portfolio">
+                <a className="mobile-menu-item" href="/kontakt">
                   Kontakt
                 </a>
               </div>
@@ -88,7 +87,9 @@ const Header = ({ className, siteTitle, setBodyBlurState, activePage }) => {
         >
           Meny
         </MobileMenuIcon>
-        <ActivePageIndicator className="full-height">{activePage}</ActivePageIndicator>
+        <ActivePageIndicator className="full-height">
+          {activePage !== 'Home' ? activePage : null}
+        </ActivePageIndicator>
       </Container>
     </header>
   );

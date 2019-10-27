@@ -18,25 +18,36 @@ const setBodyBlurState = (setBlurState, blurState) => {
 
 export default ({ data }) => {
   const [blurState, setBlurState] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const item = data.allSitePage.edges[0].node.context;
 
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setWindowSize(window.innerWidth);
+    });
+  });
+
   return (
-    <Layout>
-      <Header
-        className={blurState ? 'blur' : ''}
-        siteTitle="Brusjan"
-        setBodyBlurState={setBodyBlurState.bind(null, setBlurState, blurState)}
-        activePage="Arbeid"
-      />
-      <SEO title="Arbeid" />
+    <Layout title="Arbeid">
       <Wrapper>
         <Container className="container">
           <div className="row">
             <div className="col col-8">
-              <StockImage />
+              <Image>
+                <StockImage />
+              </Image>
+              <Title>
+                {item.name}
+                {' '}
+                -
+                {item.shortTitle}
+              </Title>
             </div>
             <div className="col col-4">
-              <ArbeidList activeItem={item.slug} listStyle="right" />
+              <ArbeidList
+                activeItem={item.slug}
+                listStyle={windowSize > 768 ? 'right' : 'center'}
+              />
             </div>
           </div>
         </Container>
@@ -44,6 +55,17 @@ export default ({ data }) => {
     </Layout>
   );
 };
+
+const Title = styled.h2`
+  font-size: 60px;
+  text-align: center;
+  margin-top: 12px;
+`;
+
+const Image = styled.div`
+  max-width: 670px;
+  margin: 0 auto;
+`;
 
 const Wrapper = styled.div`
   height: 100vh !important;
@@ -64,9 +86,9 @@ export const query = graphql`
         node {
           context {
             name
-            title
+            fullTitle
+            shortTitle
             slug
-            image
           }
         }
       }

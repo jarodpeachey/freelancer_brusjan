@@ -8,11 +8,12 @@ const ArbeidList = ({ listStyle, activeItem }) => {
   const { allSitePage } = useStaticQuery(
     graphql`
       query {
-        allSitePage(filter: { context: { title: { regex: "" } } }) {
+        allSitePage(filter: { context: { fullTitle: { regex: "" } } }) {
           edges {
             node {
               context {
-                title
+                fullTitle
+                shortTitle
                 name
                 slug
               }
@@ -30,8 +31,8 @@ const ArbeidList = ({ listStyle, activeItem }) => {
         <ListItem
           activeItem={node.context.slug === activeItem}
           listStyle={listStyle}
-          title={node.context.name}
-          subtitle={node.context.title}
+          name={node.context.name}
+          title={node.context.fullTitle}
           link={`/arbeid/${node.context.slug}`}
         />
       ))}

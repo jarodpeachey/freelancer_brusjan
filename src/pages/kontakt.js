@@ -2,19 +2,14 @@ import React from 'react';
 import { styled } from 'linaria/react';
 // import { graphql } from 'gatsby';
 import Layout from '../components/layout';
-import ArbeidList from '../components/arbeid-list';
 
-const ArbeidPage = ({ data }) => {
-  return (
-    <Layout title="Arbeid">
-      <Wrapper>
-        <Container className="container">
-          <ArbeidList listStyle="center" />
-        </Container>
-      </Wrapper>
-    </Layout>
-  );
-};
+const KontaktPage = ({ data }) => (
+  <Layout title="Kontakt">
+    <Wrapper>
+      <Container className="container" />
+    </Wrapper>
+  </Layout>
+);
 
 const Container = styled.div`
   max-width: 569px !important;
@@ -27,4 +22,4 @@ const Wrapper = styled.div`
   padding: 120px 0;
 `;
 
-export default ArbeidPage;
+export default KontaktPage;

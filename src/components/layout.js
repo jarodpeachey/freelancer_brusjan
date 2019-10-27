@@ -1,14 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './layout.css';
 import './breeze_layout.css';
 import { styled } from 'linaria/react';
-// import Header from './header';
+import { useStaticQuery, graphql } from 'gatsby';
+import Header from './header';
+import SEO from './seo';
 
-const Layout = ({ children }) => {
+const setBodyBlurState = (setBlur, blurState) => {
+  if (blurState) {
+    setBlur(false);
+  } else {
+    setBlur(true);
+  }
+};
+
+const Layout = ({ children, title = 'Home' }) => {
+  const [blurState, setBlur] = useState(false);
+  const titleData = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
   return (
     <>
-      <main>{children}</main>
+      <Header
+        activePage={title}
+        className={blurState ? 'blur' : ''}
+        siteTitle={titleData.site.siteMetadata.title}
+        setBodyBlurState={setBodyBlurState.bind(null, setBlur, blurState)}
+      />
+      <SEO title={title} />
+      <div className={blurState ? 'blur' : ''}>{children}</div>
     </>
   );
 };
@@ -16,6 +43,5 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
 
 export default Layout;
