@@ -2,22 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { styled } from 'linaria/react';
 // import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import Layout from '../components/layout';
-import Header from '../components/header';
-import SEO from '../components/seo';
-import ArbeidList from '../components/arbeid-list';
+import Layout from '../components/Layout/layout';
+import ArbeidList from '../components/Arbeid/arbeid-list';
 import { StockImage } from '../components/image';
 
-const setBodyBlurState = (setBlurState, blurState) => {
-  if (blurState) {
-    setBlurState(false);
-  } else {
-    setBlurState(true);
-  }
-};
-
 export default ({ data }) => {
-  const [blurState, setBlurState] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
   const item = data.allSitePage.edges[0].node.context;
 

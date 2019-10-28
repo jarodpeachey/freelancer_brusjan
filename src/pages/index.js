@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'linaria/react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout/layout';
 import { MainLogo } from '../components/image';
 
 const IndexPage = ({ data }) => {

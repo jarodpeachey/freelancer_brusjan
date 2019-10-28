@@ -4,7 +4,7 @@ import { styled } from 'linaria/react';
 import Layout from '../components/Layout/layout';
 import ArbeidList from '../components/Arbeid/arbeid-list';
 
-const ArbeidPage = ({ data }) => (
+const ArbeidPage = () => (
   <Layout title="Arbeid">
     <Wrapper className="container">
       <ArbeidList listStyle="center" />

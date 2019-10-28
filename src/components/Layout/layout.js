@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './layout.css';
-import './breeze_layout.css';
-import { styled } from 'linaria/react';
+import '../breeze_layout.css';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import SEO from './seo';
@@ -26,13 +24,15 @@ const Layout = ({ children, title = 'Home', dark = false, subMenu = {} }) => {
       }
     }
   `);
+
   useEffect(() => {
     if (dark) {
       document.body.classList.add('dark');
     } else {
       document.body.classList.remove('dark');
     }
-  })
+  });
+
   return (
     <div className={dark ? 'dark' : ''}>
       <Header
@@ -51,6 +51,9 @@ const Layout = ({ children, title = 'Home', dark = false, subMenu = {} }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
+  dark: PropTypes.bool,
+  subMenu: PropTypes.object,
 };
 
 export default Layout;

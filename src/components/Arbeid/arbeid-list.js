@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { styled } from 'linaria/react';
+import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import ArbeidListItem from './arbeid-list-item';
 

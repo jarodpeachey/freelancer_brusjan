@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { styled } from 'linaria/react';
 import { graphql, useStaticQuery } from 'gatsby';
 import KontaktListItem from './kontakt-list-item';

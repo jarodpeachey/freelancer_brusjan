@@ -1,53 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import { styled } from 'linaria/react';
-// import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import Layout from '../components/Layout/layout';
-import Header from '../components/Layout/header';
-import SEO from '../components/Layout/seo';
 import KontaktList from '../components/Kontakt/kontakt-list';
-import { StockImage } from '../components/image';
-
-const setBodyBlurState = (setBlurState, blurState) => {
-  if (blurState) {
-    setBlurState(false);
-  } else {
-    setBlurState(true);
-  }
-};
 
 export default ({ data }) => {
-  const [blurState, setBlurState] = useState(false);
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const item = data.allSitePage.edges[0].node.context;
-
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      setWindowSize(window.innerWidth);
-    });
-  });
 
   return (
     <Layout
       dark
       title="Kontakt"
       subMenu={{
-        text: "Folka",
+        text: 'Folka',
         component: <KontaktList activeItem={item.slug} listStyle="right" />,
       }}
     >
       <Wrapper className="container">
-        <Title>
-          {item.title}
-        </Title>
-        <Name>
-          {item.name}
-        </Name>
+        <Title>{item.title}</Title>
+        <Name>{item.name}</Name>
         <Email>
-          <strong>E: </strong>{item.email}
+          <strong>E: </strong>
+          {item.email}
         </Email>
         <Phone>
-          <strong>T: </strong>{item.phone}
+          <strong>T: </strong>
+          {item.phone}
         </Phone>
       </Wrapper>
     </Layout>
