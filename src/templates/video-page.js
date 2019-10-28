@@ -7,7 +7,7 @@ import ArbeidList from '../components/Arbeid/arbeid-list';
 import { StockImage } from '../components/image';
 
 export default ({ data }) => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(document.body.innerWidth);
   const item = data.allSitePage.edges[0].node.context;
 
   useEffect(() => {
