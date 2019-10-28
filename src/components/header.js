@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import { styled } from 'linaria/react';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const Header = ({
   className,
@@ -27,21 +28,26 @@ const Header = ({
       event.preventDefault();
 
       if (menuOpen) {
+        clearAllBodyScrollLocks();
         setMenuState(false);
         setBodyBlurState();
       } else {
+        disableBodyScroll(document.getElementsByClassName('mobile-menu-items'));
         setMenuState(true);
         setBodyBlurState();
       }
     } else if (event.type === 'click') {
       if (menuOpen) {
+        clearAllBodyScrollLocks();
         setMenuState(false);
         setBodyBlurState();
       }
     } else if (menuOpen) {
+      clearAllBodyScrollLocks();
       setMenuState(false);
       setBodyBlurState();
     } else {
+      disableBodyScroll(document.getElementsByClassName('mobile-menu-items'));
       setMenuState(true);
       setBodyBlurState();
     }
@@ -52,21 +58,26 @@ const Header = ({
       event.preventDefault();
 
       if (subMenuOpen) {
+        clearAllBodyScrollLocks();
         setSubMenuState(false);
         setBodyBlurState();
       } else {
+        disableBodyScroll(document.getElementsByClassName('mobile-menu-items'));
         setSubMenuState(true);
         setBodyBlurState();
       }
     } else if (event.type === 'click') {
       if (subMenuOpen) {
+        clearAllBodyScrollLocks();
         setSubMenuState(false);
         setBodyBlurState();
       }
     } else if (subMenuOpen) {
+      clearAllBodyScrollLocks();
       setSubMenuState(false);
       setBodyBlurState();
     } else {
+      disableBodyScroll(document.getElementsByClassName('mobile-menu-items'));
       setSubMenuState(true);
       setBodyBlurState();
     }
@@ -118,10 +129,10 @@ const Header = ({
             </div>
             <div
               id="mobile-submenu"
-              className={subMenuOpen ? 'mobile-submenu open' : 'mobile-submenu'}
+              className={subMenuOpen ? 'mobile-menu open' : 'mobile-menu'}
             >
               <div
-                className="mobile-submenu-items"
+                className="mobile-menu-items"
                 onMouseLeave={toggleSubMenu.bind(
                   null,
                   subMenuOpen,
