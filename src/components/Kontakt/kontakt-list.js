@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import KontaktListItem from './kontakt-list-item';
 
 const KontaktList = ({ listStyle, activeItem }) => {
-  console.log(activeItem);
   const { allSitePage } = useStaticQuery(
     graphql`
       query {

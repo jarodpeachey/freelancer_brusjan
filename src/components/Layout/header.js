@@ -18,8 +18,6 @@ const Header = ({
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setPageScroll(window.scrollY);
-
-      console.log(document.body.scrollY);
     });
   });
 
@@ -82,8 +80,6 @@ const Header = ({
       setBodyBlurState();
     }
   };
-
-  console.log(menuOpen, subMenuOpen);
 
   return (
     <header

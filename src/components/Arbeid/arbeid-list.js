@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import ArbeidListItem from './arbeid-list-item';
 
 const ArbeidList = ({ listStyle, activeItem }) => {
-  console.log(activeItem);
   const { allSitePage } = useStaticQuery(
     graphql`
       query {
