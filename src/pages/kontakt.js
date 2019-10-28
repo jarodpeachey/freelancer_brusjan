@@ -1,9 +1,9 @@
 import React from 'react';
 import { styled } from 'linaria/react';
 // import { graphql } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Layout from '../components/Layout/layout';
 import KontaktList from '../components/Kontakt/kontakt-list';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const KontaktPage = ({ data }) => (
   <Layout title="Kontakt" dark>
@@ -39,7 +39,7 @@ const KontaktPage = ({ data }) => (
 
 const Wrapper = styled.div`
   height: 100vh !important;
-  padding: 120px 0;
+  padding: 120px 48px;
 `;
 
 const Title = styled.h1`
@@ -85,7 +85,7 @@ const SocialButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   &:hover {
     background: white;
     color: black !important;

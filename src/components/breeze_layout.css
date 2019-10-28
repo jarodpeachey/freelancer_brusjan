@@ -118,7 +118,8 @@ html {
   width: 100% !important;
   z-index: 999 !important;
   /* padding-top: 16px; */
-  height: 60px;
+  height: 90px;
+  padding-bottom: 30px;
   position: fixed;
   /* top: -16px; */
   color: black;
@@ -172,7 +173,7 @@ html {
 
 .mobile-menu {
   position: fixed;
-  padding-top: 30px;
+  padding-top: 20px;
   top: 0;
   right: 0;
   left: 0;
@@ -190,7 +191,7 @@ html {
 }
 
 #mobile-submenu.mobile-menu {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .dark .mobile-menu,
@@ -213,7 +214,7 @@ html {
   background: transparent !important;
   overflow-y: auto;
   height: 100%;
-  padding-top: 22px;
+  padding-top: 32px;
 }
 
 .mobile-menu-items::-webkit-scrollbar {
@@ -230,7 +231,7 @@ html {
 }
 
 #mobile-submenu .mobile-menu-items {
-  padding-top: 22px;
+  padding-top: 43px;
 }
 
 .mobile-menu-item {
@@ -254,8 +255,9 @@ html {
 ---------------------------------------------------------------*/
 
 .blur {
-  filter: blur(5px) !important;
-  -webkit-filter: blur(5px) !important;
+  filter: blur(10px) !important;
+  -webkit-filter: blur(10px) !important;
+  color: rgb(170, 170, 170);
 }
 
 .wrapper-blur {

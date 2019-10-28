@@ -25,7 +25,7 @@ export default ({ data }) => {
           <div className="row">
             <div className="col col-8">
               <Image>
-                <StockImage />
+                {item.image}
               </Image>
               <Title>
                 {item.name}

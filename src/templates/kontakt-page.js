@@ -48,6 +48,9 @@ const Name = styled.div`
   font-size: 90px;
   font-weight: 800;
   margin-bottom: 36px;
+  @media(max-width: 400px) {
+    font-size: 70px;
+  }
 `;
 
 const Phone = styled.div`

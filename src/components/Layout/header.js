@@ -149,14 +149,15 @@ const Header = ({
           onMouseOver={!subMenuOpen ? toggleMenu : undefined}
           onTouchEnd={!subMenuOpen ? toggleMenu : undefined}
           onClick={!subMenuOpen ? toggleMenu : undefined}
-          top={24}
+          top={20}
         >
           Meny
         </MobileMenuIcon>
         <ActivePageIndicator
           className={
-            menuOpen || subMenuOpen ? 'full-height blur' : 'full-height'
+            menuOpen || subMenuOpen ? 'blur' : ''
           }
+          top={50}
         >
           {activePage !== 'Home' ? activePage : null}
         </ActivePageIndicator>
@@ -169,7 +170,7 @@ const Header = ({
             onMouseOver={!menuOpen ? toggleSubMenu : undefined}
             onTouchEnd={!menuOpen ? toggleSubMenu : undefined}
             onClick={!menuOpen ? toggleSubMenu : undefined}
-            top={92}
+            top={80}
           >
             {subMenu.text}
           </MobileSubMenuIcon>
@@ -217,13 +218,14 @@ const MobileSubMenuIcon = styled.div`
 
 const ActivePageIndicator = styled.div`
   position: absolute;
-  top: 0;
+  top: ${props => props.top}px;
   right: 50px;
   display: flex;
   align-items: center;
   font-size: 14px;
-  top: 36px;
-  font-weight: 800;
+  text-decoration: underline;
+  z-index: ${props => (props.menuOpen ? -999 : 1)};
+  font-weight: ${props => (props.subMenuOpen ? 800 : 500)};
 `;
 
 export default Header;

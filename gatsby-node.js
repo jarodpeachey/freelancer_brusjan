@@ -1,6 +1,6 @@
 const path = require('path');
-const videos = require('./src/videos.json');
-const kontakts = require('./src/kontakts.json');
+const videos = require('./src/videos');
+const kontakts = require('./src/kontakts');
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions;
