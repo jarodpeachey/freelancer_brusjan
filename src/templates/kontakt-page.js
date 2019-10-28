@@ -37,9 +37,18 @@ export default ({ data }) => {
       }}
     >
       <Wrapper className="container">
-        {item.name}
-        {item.title}
-        {item.email}
+        <Title>
+          {item.title}
+        </Title>
+        <Name>
+          {item.name}
+        </Name>
+        <Email>
+          <strong>E: </strong>{item.email}
+        </Email>
+        <Phone>
+          <strong>T: </strong>{item.phone}
+        </Phone>
       </Wrapper>
     </Layout>
   );
@@ -47,7 +56,28 @@ export default ({ data }) => {
 
 const Wrapper = styled.div`
   height: 100vh !important;
-  padding: 120px 0;
+  padding-top: 120px;
+  margin: 0 auto;
+  max-width: 569px;
+`;
+
+const Title = styled.div`
+  font-size: 20px;
+  margin-bottom: 36px;
+`;
+
+const Name = styled.div`
+  font-size: 90px;
+  font-weight: 800;
+  margin-bottom: 36px;
+`;
+
+const Phone = styled.div`
+  font-size: 20px;
+`;
+
+const Email = styled.div`
+  font-size: 20px;
 `;
 
 export const query = graphql`

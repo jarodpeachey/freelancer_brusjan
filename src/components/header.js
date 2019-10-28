@@ -38,6 +38,9 @@ const Header = ({
         setMenuState(false);
         setBodyBlurState();
       }
+    } else if (menuOpen) {
+      setMenuState(false);
+      setBodyBlurState();
     } else {
       setMenuState(true);
       setBodyBlurState();
@@ -60,6 +63,9 @@ const Header = ({
         setSubMenuState(false);
         setBodyBlurState();
       }
+    } else if (subMenuOpen) {
+      setSubMenuState(false);
+      setBodyBlurState();
     } else {
       setSubMenuState(true);
       setBodyBlurState();

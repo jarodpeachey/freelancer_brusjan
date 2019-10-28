@@ -27,6 +27,7 @@ const Title = styled.h1`
 const Subtitle = styled.h1`
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 120px;
 `;
 
 export default KontaktPage;
