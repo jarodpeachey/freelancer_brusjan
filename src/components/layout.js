@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './layout.css';
 import './breeze_layout.css';
@@ -15,7 +15,7 @@ const setBodyBlurState = (setBlur, blurState) => {
   }
 };
 
-const Layout = ({ children, title = 'Home', dark = false }) => {
+const Layout = ({ children, title = 'Home', dark = false, subMenu = {} }) => {
   const [blurState, setBlur] = useState(false);
   const titleData = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -26,9 +26,17 @@ const Layout = ({ children, title = 'Home', dark = false }) => {
       }
     }
   `);
+  useEffect(() => {
+    if (dark) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  })
   return (
     <div className={dark ? 'dark' : ''}>
       <Header
+        subMenu={subMenu}
         dark={dark}
         activePage={title}
         className={blurState ? 'blur' : ''}

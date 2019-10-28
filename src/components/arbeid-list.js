@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { styled } from 'linaria/react';
 import { graphql, useStaticQuery } from 'gatsby';
-import ListItem from './list-item';
+import ArbeidListItem from './arbeid-list-item';
 
 const ArbeidList = ({ listStyle, activeItem }) => {
   console.log(activeItem);
@@ -28,7 +28,7 @@ const ArbeidList = ({ listStyle, activeItem }) => {
   return (
     <>
       {allSitePage.edges.map(({ node }) => (
-        <ListItem
+        <ArbeidListItem
           activeItem={node.context.slug === activeItem}
           listStyle={listStyle}
           name={node.context.name}

@@ -9,7 +9,7 @@ const toggleHoverState = (hoverState, setHoverState) => {
   }
 };
 
-const ListItem = ({ title, name, link, listStyle, activeItem}) => {
+const ArbeidListItem = ({ title, name, link, listStyle, activeItem}) => {
   const [hoverState, setHoverState] = useState(false);
   return (
     <Wrapper
@@ -58,4 +58,4 @@ const ListItemSubtitle = styled.div`
   font-size: ${props => (props.centered ? '16px' : '16px')};
 `;
 
-export default ListItem;
+export default ArbeidListItem;

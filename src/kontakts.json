@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Micheal Jones",
+    "title": "Daglig Leder",
+    "slug": "micheal-jones",
+    "email": "micheal@brusjan.no",
+    "phone": "47000120"
+  },
+  {
+    "name": "Oivind Bolstad",
+    "title": "Prosjektieder",
+    "slug": "oivind-bolstad",
+    "email": "test@test.no",
+    "phone": "12345678"
+  },
+  {
+    "name": "Thomas Stenerud",
+    "title": "Regissor/Klipper",
+    "slug": "thomas-stenerud",
+    "email": "test@test.no",
+    "phone": "12345678"
+  },
+  {
+    "name": "Thoas Andal",
+    "title": "Klipper/Animator",
+    "slug": "thomas-andal",
+    "email": "test@test.no",
+    "phone": "12345678"
+  },
+  {
+    "name": "Johannes Apeiseth",
+    "title": "Klipper",
+    "slug": "johannes-apeiseth",
+    "email": "test@test.no",
+    "phone": "12345678"
+  },
+  {
+    "name": "Jonas Selim",
+    "title": "Klipper",
+    "slug": "jonas-selim",
+    "email": "test@test.no",
+    "phone": "12345678"
+  }
+]

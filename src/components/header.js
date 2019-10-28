@@ -1,30 +1,17 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import { styled } from 'linaria/react';
-// import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-const toggleMenu = (menuOpen, setMenuState, setBodyBlurState) => {
-  if (menuOpen) {
-    setMenuState(false);
-    setBodyBlurState();
-  } else {
-    setMenuState(true);
-    setBodyBlurState();
-  }
-};
-
-// const toggleScroll = (pageScroll, setPageScroll, setBodyBlurState) => {
-//   if (pageScroll) {
-//     setPageScroll(true);
-//     setBodyBlurState();
-//   } else {
-//     setPageScroll(true);
-//     setBodyBlurState();
-//   }
-// };
-
-const Header = ({ className, siteTitle, setBodyBlurState, activePage, dark }) => {
+const Header = ({
+  className,
+  siteTitle,
+  setBodyBlurState,
+  activePage,
+  dark,
+  subMenu = {},
+}) => {
   const [menuOpen, setMenuState] = useState(false);
+  const [subMenuOpen, setSubMenuState] = useState(false);
   const [pageScroll, setPageScroll] = useState(0);
 
   useEffect(() => {
@@ -35,9 +22,55 @@ const Header = ({ className, siteTitle, setBodyBlurState, activePage, dark }) =>
     });
   });
 
+  const toggleMenu = (event) => {
+    if (event.type === 'touchend') {
+      event.preventDefault();
+
+      if (menuOpen) {
+        setMenuState(false);
+        setBodyBlurState();
+      } else {
+        setMenuState(true);
+        setBodyBlurState();
+      }
+    } else if (event.type === 'click') {
+      if (menuOpen) {
+        setMenuState(false);
+        setBodyBlurState();
+      }
+    } else {
+      setMenuState(true);
+      setBodyBlurState();
+    }
+  };
+
+  const toggleSubMenu = (event) => {
+    if (event.type === 'touchend') {
+      event.preventDefault();
+
+      if (subMenuOpen) {
+        setSubMenuState(false);
+        setBodyBlurState();
+      } else {
+        setSubMenuState(true);
+        setBodyBlurState();
+      }
+    } else if (event.type === 'click') {
+      if (subMenuOpen) {
+        setSubMenuState(false);
+        setBodyBlurState();
+      }
+    } else {
+      setSubMenuState(true);
+      setBodyBlurState();
+    }
+  };
+
+  console.log(menuOpen, subMenuOpen);
+
   return (
     <header
-      className={dark ? pageScroll > 0 ? 'dark scrolled' : 'dark' : ''}
+      className={dark ? (pageScroll > 0 ? 'dark scrolled' : 'dark') : ''}
       id="navbar"
     >
       <Container className="container full-height">
@@ -77,22 +110,57 @@ const Header = ({ className, siteTitle, setBodyBlurState, activePage, dark }) =>
                 </a>
               </div>
             </div>
+            <div
+              id="mobile-submenu"
+              className={subMenuOpen ? 'mobile-submenu open' : 'mobile-submenu'}
+            >
+              <div
+                className="mobile-submenu-items"
+                onMouseLeave={toggleSubMenu.bind(
+                  null,
+                  subMenuOpen,
+                  setSubMenuState,
+                  setBodyBlurState,
+                )}
+              >
+                {subMenu.component}
+              </div>
+            </div>
           </div>
         </div>
         <MobileMenuIcon
-          className="full-height"
-          onMouseOver={toggleMenu.bind(
-            null,
-            menuOpen,
-            setMenuState,
-            setBodyBlurState,
-          )}
+          id="mobile-menu-icon"
+          subMenuOpen={subMenuOpen}
+          menuOpen={menuOpen}
+          className={subMenuOpen && 'blur'}
+          onMouseOver={!subMenuOpen ? toggleMenu : undefined}
+          onTouchEnd={!subMenuOpen ? toggleMenu : undefined}
+          onClick={!subMenuOpen ? toggleMenu : undefined}
+          top={24}
         >
           Meny
         </MobileMenuIcon>
-        <ActivePageIndicator className="full-height">
+        <ActivePageIndicator
+          className={
+            menuOpen || subMenuOpen ? 'full-height blur' : 'full-height'
+          }
+        >
           {activePage !== 'Home' ? activePage : null}
         </ActivePageIndicator>
+        {subMenu ? (
+          <MobileSubMenuIcon
+            id="mobile-submenu-icon"
+            className={menuOpen && 'blur'}
+            menuOpen={menuOpen}
+            subMenuOpen={subMenuOpen}
+            onMouseOver={!menuOpen ? toggleSubMenu : undefined}
+            onTouchEnd={!menuOpen ? toggleSubMenu : undefined}
+            onClick={!menuOpen ? toggleSubMenu : undefined}
+            top={92}
+          >
+            {subMenu.text}
+          </MobileSubMenuIcon>
+        ) : null}
       </Container>
     </header>
   );
@@ -110,24 +178,34 @@ const Container = styled.div``;
 
 const MobileMenuIcon = styled.div`
   position: absolute;
-  top: 0;
-  right: 60px;
+  top: ${props => props.top}px;
+  right: 50px;
   display: flex;
   align-items: center;
   font-size: 14px;
   text-decoration: underline;
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition-duration: 0.5s;
-  }
-  z-index: 999;
+  cursor: pointer;
+  z-index: ${props => (props.subMenuOpen ? -999 : 999)};
+  font-weight: ${props => (props.menuOpen ? 800 : 500)};
+`;
+
+const MobileSubMenuIcon = styled.div`
+  position: absolute;
+  top: ${props => props.top}px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: ${props => (props.menuOpen ? -999 : 999)};
+  font-weight: ${props => (props.subMenuOpen ? 800 : 500)};
 `;
 
 const ActivePageIndicator = styled.div`
   position: absolute;
   top: 0;
-  right: 60px;
+  right: 50px;
   display: flex;
   align-items: center;
   font-size: 14px;

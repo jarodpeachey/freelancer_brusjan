@@ -12,9 +12,10 @@
   border-radius: 50px;
 }
 
-.mobile-menu {
+.mobile-menu,
+.mobile-submenu {
   position: fixed;
-  padding-top: 64px;
+  padding-top: 30px;
   top: 0;
   right: 0;
   left: 0;
@@ -31,7 +32,17 @@
   transition: all 0.275s 0.1s;
 }
 
-.mobile-menu.open {
+.mobile-submenu {
+  padding-top: 100px;
+}
+
+.dark .mobile-menu,
+.dark .mobile-submenu {
+  background: transparent;
+}
+
+.mobile-menu.open,
+.mobile-submenu.open {
   opacity: 1;
   z-index: 100;
   visibility: visible;
@@ -39,10 +50,34 @@
   width: 100%;
 }
 
-.mobile-menu-items {
+.mobile-menu-items,
+.mobile-submenu-items {
   width: fit-content;
   margin-left: auto;
   background: transparent !important;
+  overflow-y: scroll;
+  height: 100%;
+  padding-top: 22px;
+}
+
+.mobile-menu-items::-webkit-scrollbar,
+.mobile-submenu-items::-webkit-scrollbar {
+  width: 0.2em;
+}
+.mobile-menu-items::-webkit-scrollbar-track,
+.mobile-submenu-items::-webkit-scrollbar-track {
+  background: black;
+}
+.mobile-menu-items::-webkit-scrollbar-thumb,
+.mobile-submenu-items::-webkit-scrollbar-thumb {
+  background-color: white;
+  z-index: 9999;
+  border-radius: 50px;
+  height: 20px;
+}
+
+.mobile-submenu-items {
+  padding-top: 22px;
 }
 
 .mobile-menu-item {
@@ -51,8 +86,7 @@
   color: white;
   padding: 12px 0;
   text-align: right;
-  padding-right: 60px;
-  padding-left: 120px;
+  padding-right: 50px;
   background: transparent !important;
 }
 
@@ -2782,9 +2816,21 @@ small {
 
 .dark {
   background: black !important;
-  color: white !important;;
+  color: white !important;
 }
 
 .dark a {
-  color: white !important;;
+  color: white !important;
+}
+
+.dark::-webkit-scrollbar {
+  width: 0.5em;
+}
+.dark::-webkit-scrollbar-track {
+  background: black;
+}
+.dark::-webkit-scrollbar-thumb {
+  background-color: white;
+  z-index: 9999;
+  border-radius: 50px;
 }
