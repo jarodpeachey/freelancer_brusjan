@@ -292,7 +292,7 @@ html {
   margin: 0 auto;
   width: 95%;
   max-width: 1350px;
-  padding: 64px 12px;
+  padding: 12px 12px;
 }
 
 @media (min-width: 540px) {

@@ -11,8 +11,8 @@ export default ({ data }) => {
   const item = data.allSitePage.edges[0].node.context;
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
-      setWindowSize(window.innerWidth);
+    document.body.addEventListener('resize', () => {
+      setWindowSize(document.body.innerWidth);
     });
   });
 

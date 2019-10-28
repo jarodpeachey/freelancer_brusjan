@@ -1,17 +1,23 @@
 import React from 'react';
 import { styled } from 'linaria/react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  fab,
+  faInstagram,
+  faFacebookF,
+} from '@fortawesome/free-brands-svg-icons';
 import Layout from '../components/Layout/layout';
 import { MainLogo } from '../components/image';
 
-const IndexPage = ({ data }) => {
-  return (
-    <Layout>
-      <Wrapper>
-        <MainLogo />
-      </Wrapper>
-    </Layout>
-  );
-};
+library.add(fab, faInstagram, faFacebookF);
+
+const IndexPage = ({ data }) => (
+  <Layout>
+    <Wrapper>
+      <MainLogo />
+    </Wrapper>
+  </Layout>
+);
 
 const Wrapper = styled.div`
   height: 100vh !important;
