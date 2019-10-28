@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { styled } from 'linaria/react';
 // import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import Layout from '../components/layout';
-import Header from '../components/header';
-import SEO from '../components/seo';
-import KontaktList from '../components/kontakt-list';
+import Layout from '../components/Layout/layout';
+import Header from '../components/Layout/header';
+import SEO from '../components/Layout/seo';
+import KontaktList from '../components/Kontakt/kontakt-list';
 import { StockImage } from '../components/image';
 
 const setBodyBlurState = (setBlurState, blurState) => {

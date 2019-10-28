@@ -1,8 +1,8 @@
 import React from 'react';
 import { styled } from 'linaria/react';
 // import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import ArbeidList from '../components/arbeid-list';
+import Layout from '../components/Layout/layout';
+import ArbeidList from '../components/Arbeid/arbeid-list';
 
 const ArbeidPage = ({ data }) => (
   <Layout title="Arbeid">

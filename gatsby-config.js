@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Brusjan',
-    description:
-      'Front-End web developer with an eye for design. Experience in HTML, CSS, Javascript, Bootstrap, as well as back-end languages like PHP, MySQL and others.',
+    description: '',
     author: '@jarodpeachey',
   },
   plugins: [
@@ -29,11 +28,8 @@ module.exports = {
       },
     },
     'gatsby-plugin-linaria',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-zopfli',
-    }
+    },
   ],
 };
