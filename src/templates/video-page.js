@@ -28,12 +28,18 @@ export default ({ data }) => {
               <VideoContainer>
                 <img src={image} alt="" />
               </VideoContainer>
-              <Title>
-                {item.name}
-                {' '}
+              {item.shortTitle !== '' ? (
+                <Title>
+                  {item.name}
+                  {' '}
 -
-                {item.shortTitle}
-              </Title>
+                  {item.shortTitle}
+                </Title>
+              ) : (
+                <Title>
+                  {item.name}
+                </Title>
+              )}
             </div>
             <div className="col col-4">
               <ArbeidList

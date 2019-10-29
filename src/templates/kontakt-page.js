@@ -48,11 +48,20 @@ const Title = styled.div`
 
 const Name = styled.div`
   font-family: 'Obviously Extended';
-  font-size: 90px;
-  line-height: 80px;
+  font-size: 36px;
+  line-height: 40px;
   font-weight: bold;
-  @media (max-width: 400px) {
+  @media (min-width: 400px) {
+    font-size: 46px;
+    line-height: 60px;
+  }
+  @media (min-width: 600px) {
     font-size: 70px;
+    line-height: 80px;
+  }
+  @media (min-width: 769px) {
+    font-size: 90px;
+    line-height: 80px;
   }
   margin-bottom: 67px;
 `;

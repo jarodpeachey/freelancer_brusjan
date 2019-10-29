@@ -36,6 +36,7 @@ const Wrapper = styled.div`
 const InsideWrapper = styled.div`
   height: 519px !important;
   max-width: 488px;
+  margin: 0 auto;
 `;
 
 const SplashScreenWrapperInside = styled.div`

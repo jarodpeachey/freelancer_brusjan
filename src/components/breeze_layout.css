@@ -143,6 +143,7 @@ html {
   margin: 0;
   top: 2px;
   position: relative;
+  left: -22px;
 }
 
 .navbar-title img {
