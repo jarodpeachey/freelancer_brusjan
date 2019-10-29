@@ -2,6 +2,7 @@ import React from 'react';
 import { styled } from 'linaria/react';
 // import { graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import Layout from '../components/Layout/layout';
 import KontaktList from '../components/Kontakt/kontakt-list';
 
@@ -24,10 +25,10 @@ const KontaktPage = ({ data }) => (
           <div className="col col-6">
             <SocialButtons>
               <SocialButton href="https://instagram.com">
-                <FontAwesomeIcon icon={['fab', 'instagram']} />
+                <FaInstagram />
               </SocialButton>
               <SocialButton href="https://facebook.com">
-                <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+                <FaFacebookF />
               </SocialButton>
             </SocialButtons>
           </div>
