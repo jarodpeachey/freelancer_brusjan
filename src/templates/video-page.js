@@ -51,6 +51,9 @@ const Title = styled.h2`
   font-size: 60px;
   text-align: center;
   margin-top: 12px;
+  font-weight: bold;
+  font-family: Obviously Extended;
+  line-height: 60px;
 `;
 
 const Image = styled.div`
@@ -59,7 +62,7 @@ const Image = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 100vh !important;
+  height: 100% !important;
   width: 100% !important;
   background: white;
   padding: 120px 0;

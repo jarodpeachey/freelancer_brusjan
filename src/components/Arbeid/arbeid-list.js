@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { styled } from 'linaria/react';
 import ArbeidListItem from './arbeid-list-item';
 
 const ArbeidList = ({ listStyle, activeItem }) => {
@@ -23,19 +24,34 @@ const ArbeidList = ({ listStyle, activeItem }) => {
     `,
   );
 
+  console.log(
+    allSitePage.edges.filter(
+      ({ node }) => node.context.slug,
+    ),
+  );
+
   return (
     <>
-      {allSitePage.edges.map(({ node }) => (
-        <ArbeidListItem
-          activeItem={node.context.slug === activeItem}
-          listStyle={listStyle}
-          name={node.context.name}
-          title={node.context.fullTitle}
-          link={`/arbeid/${node.context.slug}`}
-        />
-      ))}
+      <CategoryTitle>Test</CategoryTitle>
+      {allSitePage.edges
+        .filter(({ node }) => node.context.tag === 'utvaigte-filmer')
+        .map(item => (
+          <ArbeidListItem
+            activeItem={item.context.slug === activeItem}
+            listStyle={listStyle}
+            item={item.context}
+            link={`/arbeid/${item.context.slug}`}
+          />
+        ))}
     </>
   );
 };
+
+const CategoryTitle = styled.div`
+  font-family: 'Obviously';
+  font-weight: bold;
+  lin-height: 20px;
+  font-size: 14px;
+`;
 
 export default ArbeidList;

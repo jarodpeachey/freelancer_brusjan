@@ -3,60 +3,28 @@
 ---------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'ralewaybold';
-  src: url('../../fonts/raleway-bold-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-bold-webfont.woff') format('woff');
+  font-family: 'Obviously Extended';
+  src: url('../../fonts/WOFF2/Obviously-Extended.woff2') format('woff2'),
+    url('../../fonts/WOFF/Obviously-Extended.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
 }
 @font-face {
-  font-family: 'ralewaybold_italic';
-  src: url('../../fonts/raleway-bolditalic-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-bolditalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Obviously Extended';
+  src: url('../../fonts/WOFF2/Obviously-Extended_Bold.woff2') format('woff2'),
+    url('../../fonts/WOFF/Obviously-Extended_Bold.woff') format('woff');
+  font-weight: bold;
 }
 @font-face {
-  font-family: 'ralewayitalic';
-  src: url('../../fonts/raleway-italic-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-italic-webfont.woff') format('woff');
+  font-family: 'Obviously';
+  src: url('../../fonts/WOFF2/Obviously-Regular.woff2') format('woff2'),
+    url('../../fonts/WOFF/Obviously-Regular.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
 }
 @font-face {
-  font-family: 'ralewaylight';
-  src: url('../../fonts/raleway-light-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ralewaylight_italic';
-  src: url('../../fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-lightitalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ralewayregular';
-  src: url('../../fonts/raleway-regular-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ralewaysemibold';
-  src: url('../../fonts/raleway-semibold-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-semibold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ralewaysemibold_italic';
-  src: url('../../fonts/raleway-semibolditalic-webfont.woff2') format('woff2'),
-    url('../../fonts/raleway-semibolditalic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Obviously';
+  src: url('../../fonts/WOFF2/Obviously-Bold.woff2') format('woff2'),
+    url('../../fonts/WOFF/Obviously-Bold.woff') format('woff');
+  font-weight: bold;
 }
 
 /* DEFAULT STYLING
@@ -74,7 +42,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: overlay;
-  font-family: Raleway !important;
+  font-family: Obviously !important;
   font-weight: 400;
 }
 
@@ -146,7 +114,7 @@ html {
 }
 
 .navbar-content {
-  padding: 4px;
+  padding-top: 31px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,6 +133,7 @@ html {
 .navbar-title {
   font-size: 28px;
   margin: 0;
+  line-height: 28px;
 }
 
 .navbar-right {
@@ -195,7 +164,7 @@ html {
 }
 
 .dark .mobile-menu,
-.dark #mobile-submenu  .mobile-menu {
+.dark #mobile-submenu .mobile-menu {
   background: transparent;
 }
 
@@ -235,13 +204,16 @@ html {
 }
 
 .mobile-menu-item {
+  font-weight: normal;
   display: block;
   font-size: 40px;
   color: white;
-  padding: 12px 0;
   text-align: right;
   padding-right: 50px;
   background: transparent !important;
+  font-family: 'Obviously Extended';
+  letter-spacing: 0;
+  line-height: 80px;
 }
 
 .mobile-menu-item:hover {

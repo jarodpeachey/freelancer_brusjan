@@ -9,7 +9,7 @@ const toggleHoverState = (hoverState, setHoverState) => {
   }
 };
 
-const ArbeidListItem = ({ title, name, link, listStyle, activeItem}) => {
+const ArbeidListItem = ({ item, link, listStyle, activeItem }) => {
   const [hoverState, setHoverState] = useState(false);
   return (
     <Wrapper
@@ -24,13 +24,13 @@ const ArbeidListItem = ({ title, name, link, listStyle, activeItem}) => {
           activeItem={activeItem}
           centered={listStyle === 'center'}
         >
-          {name}
+          {item.name}
         </ListItemTitle>
         <ListItemSubtitle
           activeItem={activeItem}
           centered={listStyle === 'center'}
         >
-          {title}
+          {item.fullTitle}
         </ListItemSubtitle>
       </a>
     </Wrapper>
@@ -38,10 +38,11 @@ const ArbeidListItem = ({ title, name, link, listStyle, activeItem}) => {
 };
 
 const Wrapper = styled.div`
-  margin: 0 auto 36px auto;
+  margin: 0 auto 39px auto;
+  height: fit-content;
   width: 100%;
   text-align: ${props => (props.centered ? 'center' : 'right')};
-  font-weight: ${props => (props.hover || props.activeItem ? 800 : 500)};
+  font-weight: ${props => (props.hover || props.activeItem ? 'bold' : 'normal')};
   cursor: ${props => (props.hover ? 'pointer' : 'normal')};
   & a {
     color: black !important;
@@ -52,10 +53,14 @@ const Wrapper = styled.div`
 
 const ListItemTitle = styled.div`
   font-size: ${props => (props.centered ? '40px' : '20px')};
+  font-family: Obviously Extended;
+  line-height: ${props => (props.centered ? '38px' : '18px')};
 `;
 
 const ListItemSubtitle = styled.div`
   font-size: ${props => (props.centered ? '16px' : '16px')};
+  line-height: ${props => (props.centered ? '20px' : '18px')};
+  font-family: Obviously;
 `;
 
 export default ArbeidListItem;

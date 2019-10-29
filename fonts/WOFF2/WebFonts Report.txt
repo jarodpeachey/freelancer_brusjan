@@ -1,0 +1,980 @@
+Web Fonts:
+**********
+
+Obviously-Black.otf
+-------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Black.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Black.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpvi29esbt.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Bold.otf
+------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Bold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Bold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpo993isg0.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Compressed.otf
+------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Compressed.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpn8dpi8lo.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedBlack.otf
+-----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedBlack.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Black.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp4tzjsdig.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedBold.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedBold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Bold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp27lw64xq.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedLight.otf
+-----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedLight.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Light.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpribw8__j.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedMedium.otf
+------------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedMedium.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Medium.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmptdbqc6_s.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedSemibold.otf
+--------------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedSemibold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Semibold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpd8c_jkcr.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedSuper.otf
+-----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedSuper.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Super.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpxoyv0u94.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CompressedThin.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CompressedThin.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Compressed_Thin.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpnmsa4pw4.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Condensed.otf
+-----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Condensed.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp1l5pn47u.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedBlack.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedBlack.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Black.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp2sz_hags.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedBold.otf
+---------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedBold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Bold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpfhrkg1cx.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedLight.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedLight.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Light.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpla8oafm6.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedMedium.otf
+-----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedMedium.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Medium.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpik2hyx7e.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedSemibold.otf
+-------------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedSemibold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Semibold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp2zp0wnxs.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedSuper.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedSuper.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Super.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpc_kf8rh6.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-CondensedThin.otf
+---------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-CondensedThin.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Condensed_Thin.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpoz9o05li.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Extended.otf
+----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Extended.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpduj9_boc.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedBlack.otf
+---------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedBlack.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Black.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmphjsyckdt.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedBold.otf
+--------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedBold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Bold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpye6llg0b.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedLight.otf
+---------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedLight.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Light.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpgneffp94.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedMedium.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedMedium.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Medium.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp0v7pvlee.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedSemibold.otf
+------------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedSemibold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Semibold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp4yhppy38.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedSuper.otf
+---------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedSuper.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Super.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpch7lgd42.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-ExtendedThin.otf
+--------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-ExtendedThin.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Extended_Thin.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpntudv_0z.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Light.otf
+-------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Light.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Light.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpbhvk0jbk.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Medium.otf
+--------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Medium.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Medium.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpytfef1s9.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Narrow.otf
+--------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Narrow.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp2if8q7f7.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowBlack.otf
+-------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowBlack.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Black.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp9ozi1dto.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowBold.otf
+------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowBold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Bold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpcncrl2h1.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowLight.otf
+-------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowLight.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Light.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp6wusw165.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowMedium.otf
+--------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowMedium.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Medium.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp51uqxnri.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowSemibold.otf
+----------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowSemibold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Semibold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpi3hh5f2i.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowSuper.otf
+-------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowSuper.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Super.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpvnok4gdh.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-NarrowThin.otf
+------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-NarrowThin.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Narrow_Thin.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp9sxugs22.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Regular.otf
+---------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Regular.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Regular.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmprmdeckxv.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Semibold.otf
+----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Semibold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Semibold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpvl9s66ug.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Super.otf
+-------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Super.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Super.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp2jsdle68.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Thin.otf
+------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Thin.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Thin.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpntlrk6ah.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-Wide.otf
+------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-Wide.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpveogn4bk.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideBlack.otf
+-----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideBlack.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Black.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpxtxuczij.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideBold.otf
+----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideBold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Bold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpms78z_qy.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideLight.otf
+-----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideLight.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Light.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpbnmw2pte.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideMedium.otf
+------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideMedium.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Medium.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmp2yp018yq.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideSemibold.otf
+--------------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideSemibold.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Semibold.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpbayawaxi.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideSuper.otf
+-----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideSuper.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Super.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpbuvsktnp.ttf' Revision 0.000
+        
+        --------------------
+
+
+Obviously-WideThin.otf
+----------------------
+source: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/OTFs/Obviously-WideThin.otf
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/jamesedmondson/Dropbox/From Old Computer/GitHub Development/Obviously/Future Fonts/v0.5/Obviously v0.5/Webfonts/WOFF2/Obviously-Wide_Thin.woff2
+    Source is binary a OTF file. Convert to TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b'\n' Built release mode font 'tmpsmr45a0n.ttf' Revision 0.000
+        
+        --------------------
+
+
+
+TTFAutohint options:
+********************
+addTTFAutoHintInfo     = False
+dwClearType            = False
+fallbackScript         = False
+gdiClearType           = True
+grayScale              = False
+hintRangeMaximum       = 50
+hintRangeMinimum       = 8
+hintingLimit           = 200
+noHintingLimit         = False
+noXHeightIncreaseLimit = False
+overRideFontLicense    = False
+preHinting             = False
+symbolFont             = False
+xHeightIncreaseLimit   = 14

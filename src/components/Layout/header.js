@@ -86,8 +86,8 @@ const Header = ({
       className={dark ? (pageScroll > 0 ? 'dark scrolled' : 'dark') : ''}
       id="navbar"
     >
-      <Container className="container full-height">
-        <div className="navbar-content full-height">
+      <Container className="container">
+        <div className="navbar-content">
           <div className="navbar-left">
             <div className={className}>
               <h2 className="navbar-title">
@@ -95,7 +95,7 @@ const Header = ({
               </h2>
             </div>
           </div>
-          <div className="navbar-right full-height">
+          <div className="navbar-right">
             <div
               id="mobile-menu"
               className={menuOpen ? 'mobile-menu open' : 'mobile-menu'}
@@ -109,9 +109,6 @@ const Header = ({
                   setBodyBlurState,
                 )}
               >
-                <a className="mobile-menu-item" href="/">
-                  Home
-                </a>
                 <a className="mobile-menu-item" href="/arbeid">
                   Arbeid
                 </a>
@@ -149,7 +146,7 @@ const Header = ({
           onMouseOver={!subMenuOpen ? toggleMenu : undefined}
           onTouchEnd={!subMenuOpen ? toggleMenu : undefined}
           onClick={!subMenuOpen ? toggleMenu : undefined}
-          top={20}
+          top={39}
         >
           Meny
         </MobileMenuIcon>
@@ -157,7 +154,7 @@ const Header = ({
           className={
             menuOpen || subMenuOpen ? 'blur' : ''
           }
-          top={50}
+          top={78}
         >
           {activePage !== 'Home' ? activePage : null}
         </ActivePageIndicator>
@@ -170,7 +167,7 @@ const Header = ({
             onMouseOver={!menuOpen ? toggleSubMenu : undefined}
             onTouchEnd={!menuOpen ? toggleSubMenu : undefined}
             onClick={!menuOpen ? toggleSubMenu : undefined}
-            top={80}
+            top={78 + 39}
           >
             {subMenu.text}
           </MobileSubMenuIcon>
@@ -192,7 +189,8 @@ const Container = styled.div``;
 
 const MobileMenuIcon = styled.div`
   position: absolute;
-  top: ${props => props.top}px;
+  top: 0;
+  top: 39px;
   right: 50px;
   display: flex;
   align-items: center;
@@ -200,12 +198,15 @@ const MobileMenuIcon = styled.div`
   text-decoration: underline;
   cursor: pointer;
   z-index: ${props => (props.subMenuOpen ? -999 : 999)};
-  font-weight: ${props => (props.menuOpen ? 800 : 500)};
+  font-weight: normal;
+  font-family: Obviously Extended;
+  line-height: 20px;
 `;
 
 const MobileSubMenuIcon = styled.div`
   position: absolute;
-  top: ${props => props.top}px;
+  top: 0;
+  top: 78px;
   right: 50px;
   display: flex;
   align-items: center;
@@ -213,7 +214,9 @@ const MobileSubMenuIcon = styled.div`
   text-decoration: underline;
   cursor: pointer;
   z-index: ${props => (props.menuOpen ? -999 : 999)};
-  font-weight: ${props => (props.subMenuOpen ? 800 : 500)};
+  font-weight: normal;
+  font-family: Obviously Extended;
+  line-height: 20px;
 `;
 
 const ActivePageIndicator = styled.div`
@@ -223,9 +226,10 @@ const ActivePageIndicator = styled.div`
   display: flex;
   align-items: center;
   font-size: 14px;
-  text-decoration: underline;
+  font-family: Obviously Extended;
+  font-weight: bold;
   z-index: ${props => (props.menuOpen ? -999 : 1)};
-  font-weight: ${props => (props.subMenuOpen ? 800 : 500)};
+  line-height: 20px;
 `;
 
 export default Header;
