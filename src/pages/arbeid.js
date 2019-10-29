@@ -13,8 +13,8 @@ const ArbeidPage = () => (
 );
 
 const Wrapper = styled.div`
-  height: 100vh !important;
-  padding: 120px 0;
+  height: 100% !important;
+  padding: 50px 0 64px;
 `;
 
 export default ArbeidPage;

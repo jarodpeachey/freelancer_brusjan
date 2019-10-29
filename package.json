@@ -5,10 +5,6 @@
   "version": "0.1.0",
   "author": "Jarod Peachey <jwpeachey107@aol.com>",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.7",
     "body-scroll-lock": "^2.6.4",
     "gatsby": "^2.15.36",
     "gatsby-background-image": "^0.8.15",

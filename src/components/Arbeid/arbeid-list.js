@@ -15,6 +15,7 @@ const ArbeidList = ({ listStyle, activeItem }) => {
                 shortTitle
                 name
                 slug
+                subCategory
               }
               id
             }
@@ -24,23 +25,28 @@ const ArbeidList = ({ listStyle, activeItem }) => {
     `,
   );
 
-  console.log(
-    allSitePage.edges.filter(
-      ({ node }) => node.context.slug,
-    ),
-  );
-
   return (
     <>
-      <CategoryTitle>Test</CategoryTitle>
+      <CategoryTitle center={listStyle === 'center'}>Utvaigte-Filmer</CategoryTitle>
       {allSitePage.edges
-        .filter(({ node }) => node.context.tag === 'utvaigte-filmer')
-        .map(item => (
+        .filter(({ node }) => node.context.subCategory === 'utvaigte-filmer')
+        .map(({ node }) => (
           <ArbeidListItem
-            activeItem={item.context.slug === activeItem}
+            activeItem={node.context.slug === activeItem}
             listStyle={listStyle}
-            item={item.context}
-            link={`/arbeid/${item.context.slug}`}
+            item={node.context}
+            link={`/arbeid/${node.context.slug}`}
+          />
+        ))}
+      <CategoryTitle center={listStyle === 'center'}>KULTUR</CategoryTitle>
+      {allSitePage.edges
+        .filter(({ node }) => node.context.subCategory === 'kultur')
+        .map(({ node }) => (
+          <ArbeidListItem
+            activeItem={node.context.slug === activeItem}
+            listStyle={listStyle}
+            item={node.context}
+            link={`/arbeid/${node.context.slug}`}
           />
         ))}
     </>
@@ -52,6 +58,8 @@ const CategoryTitle = styled.div`
   font-weight: bold;
   lin-height: 20px;
   font-size: 14px;
+  text-align: ${props => (props.center ? 'center' : 'right')};
+  margin-bottom: 39px;
 `;
 
 export default ArbeidList;

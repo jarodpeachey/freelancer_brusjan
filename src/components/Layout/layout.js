@@ -13,7 +13,7 @@ const setBodyBlurState = (setBlur, blurState) => {
   }
 };
 
-const Layout = ({ children, title = 'Home', dark = false, subMenu = {} }) => {
+const Layout = ({ children, title = 'Home', dark = false, subMenu = {}, pageIndicatorLink }) => {
   const [blurState, setBlur] = useState(false);
   const titleData = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -34,8 +34,9 @@ const Layout = ({ children, title = 'Home', dark = false, subMenu = {} }) => {
   });
 
   return (
-    <div className={dark ? 'dark' : ''}>
+    <div className={dark ? 'dark full-height' : 'full-height'}>
       <Header
+        pageIndicatorLink={pageIndicatorLink}
         subMenu={subMenu}
         dark={dark}
         activePage={title}

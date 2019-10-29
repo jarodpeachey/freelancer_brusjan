@@ -52,15 +52,24 @@ const Wrapper = styled.div`
 `;
 
 const ListItemTitle = styled.div`
-  font-size: ${props => (props.centered ? '40px' : '20px')};
+  font-size: ${props => (props.centered ? '30px' : '18px')};
   font-family: Obviously Extended;
-  line-height: ${props => (props.centered ? '38px' : '18px')};
+  line-height: ${props => (props.centered ? '32px' : '16px')};
+  @media (min-width: 569px) {
+    font-size: ${props => (props.centered ? '40px' : '20px')};
+    font-family: Obviously Extended;
+    line-height: ${props => (props.centered ? '38px' : '18px')};
+  }
 `;
 
 const ListItemSubtitle = styled.div`
-  font-size: ${props => (props.centered ? '16px' : '16px')};
-  line-height: ${props => (props.centered ? '20px' : '18px')};
+  font-size: ${props => (props.centered ? '14px' : '14px')};
+  line-height: ${props => (props.centered ? '18px' : '16px')};
   font-family: Obviously;
+  @media (min-width: 569px) {
+    font-size: ${props => (props.centered ? '16px' : '16px')};
+    line-height: ${props => (props.centered ? '20px' : '18px')};
+  }
 `;
 
 export default ArbeidListItem;

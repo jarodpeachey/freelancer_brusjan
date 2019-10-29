@@ -21,7 +21,12 @@ const KontaktListItem = ({ link, item, listStyle, activeItem }) => {
       className="col col-6 tablet-col-4"
     >
       <a href={link}>
-        <Name activeItem={activeItem} centered={listStyle === 'center'}>
+        <Name
+          hover={hoverState}
+          s
+          activeItem={activeItem}
+          centered={listStyle === 'center'}
+        >
           {item.name}
         </Name>
         <Description activeItem={activeItem} centered={listStyle === 'center'}>
@@ -51,7 +56,7 @@ const KontaktListItem = ({ link, item, listStyle, activeItem }) => {
 const Wrapper = styled.div`
   margin: 0 auto 36px auto;
   text-align: ${props => (props.centered ? 'center' : 'right')};
-  font-weight: ${props => (props.hover || props.activeItem ? 800 : 400)};
+  font-weight: ${props => (props.hover || props.activeItem ? 'bold' : 'normal')};
   cursor: ${props => (props.hover ? 'pointer' : 'normal')};
   text-decoration: ${props => (props.activeItem ? 'line-through' : 'none')};
 `;
@@ -59,14 +64,33 @@ const Wrapper = styled.div`
 const CondensedWrapper = styled.div`
   font-weight: ${props => (props.hover || props.activeItem ? 800 : 400)};
   cursor: ${props => (props.hover ? 'pointer' : 'normal')};
+  margin-bottom: 39px;
 `;
 
 const ListItemTitle = styled.div`
-  font-size: ${props => (!props.centered ? '40px' : '20px')};
+  font-family: 'Obviously Extended';
+  font-size: ${props => (!props.centered ? '36px' : '16px')};
+  line-height: 30px;
+  margin-bottom: 16px;
+  @media (min-width: 569px) {
+    font-family: 'Obviously Extended';
+    font-size: ${props => (!props.centered ? '40px' : '20px')};
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
 `;
 
 const ListItemSubtitle = styled.div`
-  font-size: ${props => (!props.centered ? '16px' : '16px')};
+  font-family: 'Obviously Extended';
+  font-size: ${props => (!props.centered ? '14px' : '14px')};
+  line-height: 20px;
+  margin-bottom: 16px;
+  @media (min-width: 569px) {
+    font-family: 'Obviously Extended';
+    font-size: ${props => (!props.centered ? '16px' : '16px')};
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
 `;
 
 const Column = styled.div`
@@ -74,13 +98,17 @@ const Column = styled.div`
 `;
 
 const Name = styled.div`
+  text-decoration: underline;
+  font-family: ${props => (props.hover ? 'Obviously Extended' : 'Obviously')};
+  line-height: 20px !important;
   font-size: 20px;
-  margin-bottom: 8px;
 `;
 
 const Description = styled.div`
-  font-size: 16px;
-  margin-top: 0;
+  font-family: Obviously;
+  line-height: 18px !important;
+  font-size: 18px;
+  text-decoration: none !important;
 `;
 
 export default KontaktListItem;

@@ -3,13 +3,16 @@ import React, { useState, useEffect } from 'react';
 import { styled } from 'linaria/react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
+const svg = require('../../assets/Brusjan_Navnetrekk.svg');
+
 const Header = ({
   className,
-  siteTitle,
+  // siteTitle,
   setBodyBlurState,
   activePage,
   dark,
   subMenu = {},
+  pageIndicatorLink = false,
 }) => {
   const [menuOpen, setMenuState] = useState(false);
   const [subMenuOpen, setSubMenuState] = useState(false);
@@ -81,21 +84,70 @@ const Header = ({
     }
   };
 
+  console.log(svg);
+
   return (
     <header
       className={dark ? (pageScroll > 0 ? 'dark scrolled' : 'dark') : ''}
       id="navbar"
     >
-      <Container className="container">
-        <div className="navbar-content">
+      <div className="container">
+        <div className="navbar-content" style={{ position: 'relative' }}>
           <div className="navbar-left">
             <div className={className}>
               <h2 className="navbar-title">
-                <a href="/">{siteTitle}</a>
+                <a href="/">
+                  <img src={svg} alt="" />
+                </a>
               </h2>
             </div>
           </div>
           <div className="navbar-right">
+            <MobileMenuIcon
+              id="mobile-menu-icon"
+              subMenuOpen={subMenuOpen}
+              menuOpen={menuOpen}
+              className={subMenuOpen && 'blur'}
+              onMouseOver={!subMenuOpen ? toggleMenu : undefined}
+              onTouchEnd={!subMenuOpen ? toggleMenu : undefined}
+              onClick={!subMenuOpen ? toggleMenu : undefined}
+              top={39}
+            >
+              Meny
+            </MobileMenuIcon>
+            {pageIndicatorLink ? (
+              <a href="/kontakt">
+                <ActivePageIndicator
+                  link
+                  className={menuOpen || subMenuOpen ? 'blur' : ''}
+                  top={78}
+                >
+                  {activePage !== 'Home' ? activePage : null}
+                </ActivePageIndicator>
+              </a>
+            ) : (
+              <ActivePageIndicator
+                className={menuOpen || subMenuOpen ? 'blur' : ''}
+                top={78}
+              >
+                {activePage !== 'Home' ? activePage : null}
+              </ActivePageIndicator>
+            )}
+
+            {subMenu ? (
+              <MobileSubMenuIcon
+                id="mobile-submenu-icon"
+                className={menuOpen && 'blur'}
+                menuOpen={menuOpen}
+                subMenuOpen={subMenuOpen}
+                onMouseOver={!menuOpen ? toggleSubMenu : undefined}
+                onTouchEnd={!menuOpen ? toggleSubMenu : undefined}
+                onClick={!menuOpen ? toggleSubMenu : undefined}
+                top={78 + 39}
+              >
+                {subMenu.text}
+              </MobileSubMenuIcon>
+            ) : null}
             <div
               id="mobile-menu"
               className={menuOpen ? 'mobile-menu open' : 'mobile-menu'}
@@ -138,41 +190,7 @@ const Header = ({
             </div>
           </div>
         </div>
-        <MobileMenuIcon
-          id="mobile-menu-icon"
-          subMenuOpen={subMenuOpen}
-          menuOpen={menuOpen}
-          className={subMenuOpen && 'blur'}
-          onMouseOver={!subMenuOpen ? toggleMenu : undefined}
-          onTouchEnd={!subMenuOpen ? toggleMenu : undefined}
-          onClick={!subMenuOpen ? toggleMenu : undefined}
-          top={39}
-        >
-          Meny
-        </MobileMenuIcon>
-        <ActivePageIndicator
-          className={
-            menuOpen || subMenuOpen ? 'blur' : ''
-          }
-          top={78}
-        >
-          {activePage !== 'Home' ? activePage : null}
-        </ActivePageIndicator>
-        {subMenu ? (
-          <MobileSubMenuIcon
-            id="mobile-submenu-icon"
-            className={menuOpen && 'blur'}
-            menuOpen={menuOpen}
-            subMenuOpen={subMenuOpen}
-            onMouseOver={!menuOpen ? toggleSubMenu : undefined}
-            onTouchEnd={!menuOpen ? toggleSubMenu : undefined}
-            onClick={!menuOpen ? toggleSubMenu : undefined}
-            top={78 + 39}
-          >
-            {subMenu.text}
-          </MobileSubMenuIcon>
-        ) : null}
-      </Container>
+      </div>
     </header>
   );
 };
@@ -185,49 +203,54 @@ Header.defaultProps = {
   siteTitle: '',
 };
 
-const Container = styled.div``;
-
 const MobileMenuIcon = styled.div`
   position: absolute;
+  right: 0;
   top: 0;
   top: 39px;
-  right: 50px;
-  display: flex;
+  left: auto;
+  right: 0;
+  display: inline-flex;
   align-items: center;
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
   z-index: ${props => (props.subMenuOpen ? -999 : 999)};
-  font-weight: normal;
+  font-weight: ${props => (props.menuOpen ? 'bold' : 'normal')};
   font-family: Obviously Extended;
   line-height: 20px;
 `;
 
 const MobileSubMenuIcon = styled.div`
   position: absolute;
+  right: 0;
   top: 0;
-  top: 78px;
-  right: 50px;
-  display: flex;
+  top: 106px;
+  left: auto;
+  right: 0;
+  display: inline-flex;
   align-items: center;
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
   z-index: ${props => (props.menuOpen ? -999 : 999)};
-  font-weight: normal;
+  font-weight: ${props => (props.subMenuOpen ? 'bold' : 'normal')};
   font-family: Obviously Extended;
   line-height: 20px;
 `;
 
 const ActivePageIndicator = styled.div`
   position: absolute;
-  top: ${props => props.top}px;
-  right: 50px;
-  display: flex;
+  right: 0;
+  top: 78px;
+  left: auto;
+  right: 0;
+  display: inline-flex;
   align-items: center;
   font-size: 14px;
   font-family: Obviously Extended;
-  font-weight: bold;
+  font-weight: ${props => (props.link ? 'normal' : 'bold')};
+  text-decoration: ${props => (props.link ? 'underline' : 'none')};
   z-index: ${props => (props.menuOpen ? -999 : 1)};
   line-height: 20px;
 `;

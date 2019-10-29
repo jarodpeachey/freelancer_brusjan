@@ -4,7 +4,8 @@ import { styled } from 'linaria/react';
 // import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import Layout from '../components/Layout/layout';
 import ArbeidList from '../components/Arbeid/arbeid-list';
-import { StockImage } from '../components/image';
+
+const image = require('../images/Video.png');
 
 export default ({ data }) => {
   const [windowSize, setWindowSize] = useState(0);
@@ -24,13 +25,13 @@ export default ({ data }) => {
         <Container className="container">
           <div className="row">
             <div className="col col-8">
-              <Image>
-                {item.image}
-              </Image>
+              <VideoContainer>
+                <img src={image} alt="" />
+              </VideoContainer>
               <Title>
                 {item.name}
                 {' '}
-                -
+-
                 {item.shortTitle}
               </Title>
             </div>
@@ -48,24 +49,31 @@ export default ({ data }) => {
 };
 
 const Title = styled.h2`
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   margin-top: 12px;
   font-weight: bold;
   font-family: Obviously Extended;
   line-height: 60px;
+  @media (min-width: 569px) {
+    font-size: 60px;
+  }
 `;
 
-const Image = styled.div`
+const VideoContainer = styled.div`
   max-width: 670px;
+  width: 100%;
   margin: 0 auto;
+  img {
+    width: 100%;
+  }
 `;
 
 const Wrapper = styled.div`
-  height: 100% !important;
   width: 100% !important;
   background: white;
-  padding: 120px 0;
+  height: 100% !important;
+  padding: 50px 0 64px;
 `;
 
 const Container = styled.div`

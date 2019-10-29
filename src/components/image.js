@@ -7,7 +7,14 @@ function withImageData (WrappedComponent) {
     <StaticQuery
       query={graphql`
         query {
-          main_logo: file(relativePath: { eq: "main_logo_transparent.png" }) {
+          main_logo: file(relativePath: { eq: "brusjan_emblem.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 1400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          main_logo_white: file(relativePath: { eq: "brusjan_emblem_white.png" }) {
             childImageSharp {
               fluid(maxWidth: 1400) {
                 ...GatsbyImageSharpFluid
@@ -52,8 +59,8 @@ function withImageData (WrappedComponent) {
 const MainLogo = withImageData(props => (
   <Img fluid={props.imageData.main_logo.childImageSharp.fluid} />
 ));
-const StockImage = withImageData(props => (
-  <Img fluid={props.imageData.stock_image.childImageSharp.fluid} />
+const MainLogoWhite = withImageData(props => (
+  <Img fluid={props.imageData.main_logo_white.childImageSharp.fluid} />
 ));
 const LiveNationImage = withImageData(props => (
   <Img fluid={props.imageData.live_nation.childImageSharp.fluid} />
@@ -65,4 +72,4 @@ const OYAImage = withImageData(props => (
   <Img fluid={props.imageData.oya.childImageSharp.fluid} />
 ));
 
-export { MainLogo, StockImage, LiveNationImage, SonyMusicImage, OYAImage };
+export { MainLogo, MainLogoWhite, LiveNationImage, SonyMusicImage, OYAImage };

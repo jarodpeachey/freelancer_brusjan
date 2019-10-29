@@ -1,7 +1,5 @@
 import React from 'react';
 import { styled } from 'linaria/react';
-// import { graphql } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import Layout from '../components/Layout/layout';
 import KontaktList from '../components/Kontakt/kontakt-list';
@@ -14,7 +12,7 @@ const KontaktPage = ({ data }) => (
       <KontaktList listStyle="row" />
     </Wrapper>
     <Footer>
-      <div className="container">
+      <Container className="container">
         <div className="row mobile">
           <div className="col col-6">
             <Address>
@@ -33,25 +31,38 @@ const KontaktPage = ({ data }) => (
             </SocialButtons>
           </div>
         </div>
-      </div>
+      </Container>
     </Footer>
   </Layout>
 );
 
 const Wrapper = styled.div`
   height: 100% !important;
-  padding: 120px 48px !important;
+  padding: 50px 0 64px;
 `;
 
 const Title = styled.h1`
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Obviously Extended';
+  line-height: 40px;
+  @media (min-width: 569px) {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+  }
 `;
 
 const Subtitle = styled.h1`
   font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 120px;
+  font-weight: bold;
+  margin-bottom: 140px;
+  font-family: 'Obviously';
+  line-height: 20px;
+`;
+
+const Container = styled.div`
+  padding-bottom: 12px;
 `;
 
 const Footer = styled.div`
@@ -67,10 +78,12 @@ const Address = styled.div``;
 
 const LineOne = styled.div`
   font-size: 12px;
+  line-height: 16px;
 `;
 
 const LineTwo = styled.div`
   font-size: 16px;
+  line-height: 16px;
 `;
 
 const SocialButtons = styled.div`

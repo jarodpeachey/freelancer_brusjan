@@ -42,8 +42,10 @@ const Column = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 100vh !important;
-  padding: 120px 0;
+  height: 100% !important;
+  padding: 50px 0 64px;
+  max-width: 960px;
+  margin: 0 auto;
 `;
 
 export default PartnerePage;

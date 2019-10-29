@@ -4,41 +4,41 @@
     "fullTitle": "Musikkvideo - \"Grov Shit\"",
     "shortTitle": "\"Grov Shit\"",
     "slug": "snow-boyz",
-    "tag": "utvaigte-filmer"
+    "subCategory": "utvaigte-filmer"
   },
   {
     "name": "\"Wanted\" Diplom - Is",
     "fullTitle": "for We Are Live",
     "shortTitle": "",
     "slug": "wanted-diplom",
-    "tag": "utvaigte-filmer"
+    "subCategory": "utvaigte-filmer"
   },
   {
     "name": "Kjarten Lauritzen",
     "fullTitle": "Musikkvideo - \"Pappa\"",
     "shortTitle": "\"Pappa\"",
     "slug": "kjarten-lauritzen",
-    "tag": "utvaigte-filmer"
+    "subCategory": "utvaigte-filmer"
   },
   {
     "name": "Vin & Rap",
     "fullTitle": "Ymse episodar",
     "shortTitle": "",
     "slug": "vin-rap",
-    "tag": "utvaigte-filmer"
+    "subCategory": "utvaigte-filmer"
   },
   {
     "name": "\"Ramm & Tornquist redder Norge\"",
     "fullTitle": "TV2 innslag",
     "shortTitle": "",
     "slug": "ramm-tornquist",
-    "tag": "utvaigte-filmer"
+    "subCategory": "utvaigte-filmer"
   },
   {
     "name": "Fanny Andersen",
     "fullTitle": "*placeholder text*",
     "shortTitle": "",
     "slug": "fanny-andersen",
-    "tag": "kultur"
+    "subCategory": "kultur"
   }
 ]
