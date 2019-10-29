@@ -39,7 +39,7 @@ const KontaktPage = ({ data }) => (
 
 const Wrapper = styled.div`
   height: 100vh !important;
-  padding: 120px 48px;
+  padding: 120px 48px !important;
 `;
 
 const Title = styled.h1`
@@ -86,6 +86,7 @@ const SocialButton = styled.a`
   align-items: center;
   justify-content: center;
   transition-duration: 0.25s;
+  color: white;
   &:hover {
     background: white;
     color: black !important;
