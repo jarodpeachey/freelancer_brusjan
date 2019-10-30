@@ -4,6 +4,7 @@ import { styled } from 'linaria/react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const svg = require('../../assets/Brusjan_Navnetrekk.svg');
+const svgWhite = require('../../assets/Brusjan_Navnetrekk_White.svg');
 
 const Header = ({
   className,
@@ -97,7 +98,11 @@ const Header = ({
             <div className={className}>
               <h2 className="navbar-title">
                 <a href="/">
-                  <img src={svg} alt="" />
+                  {dark ? (
+                    <img src={svgWhite} alt="" />
+                  ) : (
+                    <img src={svg} alt="" />
+                  )}
                 </a>
               </h2>
             </div>
