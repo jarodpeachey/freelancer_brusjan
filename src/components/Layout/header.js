@@ -219,7 +219,6 @@ const MobileMenuIcon = styled.div`
   align-items: center;
   font-size: 14px;
   text-decoration: underline;
-  cursor: pointer;
   z-index: ${props => (props.subMenuOpen ? -999 : 999)};
   font-weight: ${props => (props.menuOpen ? 'bold' : 'normal')};
   font-family: Obviously Extended;
@@ -237,7 +236,6 @@ const MobileSubMenuIcon = styled.div`
   align-items: center;
   font-size: 14px;
   text-decoration: underline;
-  cursor: pointer;
   z-index: ${props => (props.menuOpen ? -999 : 999)};
   font-weight: ${props => (props.subMenuOpen ? 'bold' : 'normal')};
   font-family: Obviously Extended;

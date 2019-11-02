@@ -57,13 +57,11 @@ const Wrapper = styled.div`
   margin: 0 auto 36px auto;
   text-align: ${props => (props.centered ? 'center' : 'right')};
   font-weight: ${props => (props.hover || props.activeItem ? 'bold' : 'normal')};
-  cursor: ${props => (props.hover ? 'pointer' : 'normal')};
   text-decoration: ${props => (props.activeItem ? 'line-through' : 'none')};
 `;
 
 const CondensedWrapper = styled.div`
   font-weight: ${props => (props.hover || props.activeItem ? 800 : 400)};
-  cursor: ${props => (props.hover ? 'pointer' : 'normal')};
   margin-bottom: 39px;
 `;
 

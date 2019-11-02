@@ -48,6 +48,16 @@ body {
   overflow-y: overlay;
   font-family: Obviously !important;
   font-weight: 400;
+  cursor: url('../assets/cursor.svg') 50 -50, auto !important;
+}
+
+a {
+  cursor: url('../assets/cursor.svg') 50 -50, auto !important;
+}
+
+.dark,
+.dark a {
+  cursor: url('../assets/cursor_white.svg') 50 -50, auto !important;
 }
 
 html {
@@ -270,7 +280,6 @@ html {
 .dark #mobile-submenu .mobile-menu {
   background: transparent;
 }
-
 
 /* BLUR + DARK STYLES
 ---------------------------------------------------------------
