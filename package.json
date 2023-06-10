@@ -6,7 +6,7 @@
   "author": "Jarod Peachey <jwpeachey107@aol.com>",
   "dependencies": {
     "body-scroll-lock": "^2.6.4",
-    "gatsby": "^2.15.36",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^0.8.15",
     "gatsby-image": "^2.2.27",
     "gatsby-plugin-linaria": "^1.2.2",
